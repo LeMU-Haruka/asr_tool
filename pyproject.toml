@@ -1,0 +1,25 @@
+[project]
+name = "asr-tool"
+version = "0.1.0"
+description = "Local ASR tool with Qwen ASR and Whisper backends"
+readme = "README.md"
+requires-python = "==3.12.*"
+dependencies = [
+    "librosa==0.11.0",
+    "qwen-asr==0.0.6",
+    "torch==2.6.0+cu124",
+    "transformers==4.57.6",
+]
+
+[tool.uv]
+package = false
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu124" }]
+torchaudio = [{ index = "pytorch-cu124" }]
+torchvision = [{ index = "pytorch-cu124" }]

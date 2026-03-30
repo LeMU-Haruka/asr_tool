@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+
+# Virtual environments
+.venv/
+
+# Editor settings
+.vscode/
+
+# Temporary local snapshot used during migration
+uv_snapshot/
+
+# Local input data
+input/
+
+# Local model checkpoints / weights
+models/
+Qwen3-ASR-0.6B/
+Qwen3-ASR-1.7B/
+Qwen3-ForcedAligner-0.6B/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
